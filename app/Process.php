@@ -67,6 +67,7 @@ class Process {
         }
         //创建独立会话
         posix_setsid();
+        usleep(500000);
         //修改工作目录
         //chdir('/');
         //开始创建多进程
