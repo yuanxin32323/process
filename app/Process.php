@@ -91,9 +91,9 @@ class Process {
                 //fclose(STDERR);
                 //启动任务
                 if (!($func_class instanceof \Closure)) {
-                    $func_class->$action();
+                    $func_class->$action($i);
                 } else {
-                    $func_class();
+                    $func_class($i);
                 }
 
                 break;
