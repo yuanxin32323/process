@@ -1,0 +1,5 @@
+/nbproject/
+/vendor/
+/process.pid
+/run.php
+/composer.lock
