@@ -18,8 +18,12 @@ $app = new \Lisao\Process\Process([
 
 ### 闭包运行
 ```php
-$app->start(function(){
-    echo "我启动了！ \n";
+/*
+ * $work_id 为工作id，从0开始，根据线程数顺序递增。
+ * 用于区分进程，指派任务
+ */
+$app->start(function($work_id){
+    echo "我启动了，工作ID：{$work_id} \n";
 });
 ```
 
@@ -27,8 +31,8 @@ $app->start(function(){
 ### 类方法运行
 ```php
 class obj {
-    public function test() {
-        echo "我启动了！ \n";
+    public function test($work_id) {
+        echo "我启动了，工作ID：{$work_id} \n";
     }
 }
 
