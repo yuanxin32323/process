@@ -17,7 +17,7 @@ $app = new \Lisao\Process\Process([
 
 
 ### 闭包运行
-```
+```php
 $app->start(function(){
     echo "我启动了！ \n";
 });
@@ -25,7 +25,7 @@ $app->start(function(){
 
 
 ### 类方法运行
-```
+```php
 class obj {
     public function test() {
         echo "我启动了！ \n";
@@ -38,6 +38,6 @@ $app->start($obj, 'test');
 
 
 ### 停止运行
-```
+```php
 $app->stop();
 ```
