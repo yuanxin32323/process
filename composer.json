@@ -1,0 +1,26 @@
+{
+    "name": "lisao/process",
+    "description": "PHP 守护进程多进程运行扩展库",
+    "keywords": ["queue"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Li Sao",
+            "email": "200831913@qq.com"
+        }
+    ],
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lisao\\Process\\": ["app"]
+        }
+    }
+}
